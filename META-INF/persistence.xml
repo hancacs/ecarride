@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="persistenceUnit">
+        <class>han.models.ecarrideModels.TaxiDriverEntity</class>
+        <class>han.models.ecarrideModels.TaxiTripDetailEntity</class>
+        <class>han.models.ecarrideModels.TaxiUsersEntity</class>
+        <class>han.models.ecarrideModels.TaxiBookingEntity</class>
+        <class>han.models.ecarrideModels.TaxiTripEntity</class>
+        <class>han.models.ecarrideModels.TaxiAdminEntity</class>
+        <class>han.models.ecarrideModels.TaxiAdminPermissionEntity</class>
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:mysql://ecarridecluster.cluster-csludvxcarnc.us-west-2.rds.amazonaws.com:3306/ecarride_db"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+        </properties>
+    </persistence-unit>
+</persistence>
