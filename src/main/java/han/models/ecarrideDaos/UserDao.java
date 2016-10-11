@@ -4,6 +4,7 @@ import javax.transaction.Transactional;
 
 import han.models.ecarrideModels.TaxiUsersEntity;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -17,6 +18,7 @@ import java.util.List;
  * @author han
  */
 @Transactional
+@Repository
 public interface UserDao extends CrudRepository<TaxiUsersEntity, Integer> {
 
   /**

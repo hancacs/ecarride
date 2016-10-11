@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 /**
- * A class to test interactions with the MySQL database using the DriverDao class.
+ * A class to han.test interactions with the MySQL database using the DriverDao class.
  *
  * @author han
  */

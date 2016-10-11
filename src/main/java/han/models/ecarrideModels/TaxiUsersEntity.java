@@ -37,6 +37,7 @@ public class TaxiUsersEntity {
     private int approvableMail;
     private int status;
 
+    //@OneToMany(mappedBy = "userId", cascade = CascadeType.ALL)
     @Id
     @Column(name = "id", nullable = false)
     public int getId() {

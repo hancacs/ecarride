@@ -6,6 +6,8 @@ package han.models.ecarrideDaos;
 
 import han.models.ecarrideModels.TaxiDriverEntity;
 import han.models.ecarrideModels.TaxiTripEntity;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QueryDslPredicateExecutor;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
@@ -13,6 +15,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -25,9 +28,10 @@ import java.util.List;
  *
  * @author han
  */
+@Repository
 @Transactional
 public interface TripDao extends CrudRepository<TaxiTripEntity, Integer> {
-
+//QueryDslPredicateExecutor<User>
     /**
      * Return the user having the passed email or null if no user is found.
      *
@@ -37,5 +41,9 @@ public interface TripDao extends CrudRepository<TaxiTripEntity, Integer> {
     public TaxiTripEntity findById(int id);
 
     public List<TaxiTripEntity> findAll();
+
+//    @Query(value = "select sum(t.dspShare) from TaxiTripEntity t")
+//    public double findDspShareSum();
+//    public double findDriverShareSum();
 
 } // class TripDao

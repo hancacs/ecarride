@@ -15,7 +15,7 @@
 //
 //
 ///**
-// * A class to test interactions with the MySQL database using the TriprDao class.
+// * A class to han.test interactions with the MySQL database using the TriprDao class.
 // *
 // * @author han
 // */
@@ -46,7 +46,6 @@
 //        data.put("insurance info: ", insuranceinfo);
 //        return new ResponseEntity<>(data, HttpStatus.OK);
 //    }
-//
 //
 //    // ------------------------
 //    // PRIVATE FIELDS

@@ -24,7 +24,7 @@ import java.util.Map;
 
 
 /**
- * A class to test interactions with the MySQL database using the UserDao class.
+ * A class to han.test interactions with the MySQL database using the UserDao class.
  *
  * @author han
  */

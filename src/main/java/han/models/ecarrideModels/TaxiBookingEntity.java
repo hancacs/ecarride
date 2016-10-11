@@ -77,6 +77,9 @@ public class TaxiBookingEntity {
         this.tripId = tripId;
     }
 
+
+//    @ManyToOne
+//    @JoinColumn(name = "taxi_users_id")
     @Basic
     @Column(name = "user_id", nullable = false)
     public int getUserId() {

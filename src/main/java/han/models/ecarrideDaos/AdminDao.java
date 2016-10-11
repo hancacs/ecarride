@@ -16,6 +16,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -30,6 +31,7 @@ import java.util.List;
  */
 @Transactional
 @Component
+@Repository
 public interface AdminDao extends CrudRepository<TaxiAdminEntity, Integer> {
 
     /**
@@ -41,5 +43,4 @@ public interface AdminDao extends CrudRepository<TaxiAdminEntity, Integer> {
     public TaxiAdminEntity findById(int id);
     public TaxiAdminEntity findByUsername(String username);
     public List<TaxiAdminEntity> findAll();
-
 } // class AdminDao

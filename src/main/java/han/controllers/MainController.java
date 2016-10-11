@@ -1,6 +1,7 @@
 //package han.controllers;
 //
-//import han.models.ecarrideDaos.UserDao;
+//import han.test.UserDao;
+//import han.test.UsersEntity;
 //import org.apache.poi.ss.usermodel.Cell;
 //import org.apache.poi.ss.usermodel.Row;
 //import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -34,6 +35,9 @@
 //    // application.properties configuration file
 //    @Autowired
 //    private Environment env;
+//
+//    @Autowired
+//    private UserDao userDao;
 //    private final Logger log = LoggerFactory.getLogger(this.getClass());
 //
 //    @RequestMapping("/")
@@ -51,68 +55,70 @@
 //     * @return An http OK status in case of success, an http 4xx status in case
 //     * of errors.
 //     */
-////    @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-////    @ResponseBody
-////    public ResponseEntity<?> uploadFile(
-////            @RequestParam("uploadfile") MultipartFile uploadfile) {
-////
-////        try {
-////            // Get the filename and build the local file path
-////            String filename = uploadfile.getOriginalFilename();
-////            String directory = env.getProperty("user.dir");
-////            String filepath = Paths.get(directory, filename).toString();
-////
-////            System.out.printf("file name is: %s%n", filepath);
-////
-////            // Save the file locally
-////            BufferedOutputStream bos =
-////                    new BufferedOutputStream(new FileOutputStream(new File(filepath)));
-////            bos.write(uploadfile.getBytes());
-////            bos.close();
-////            log.error("file is saved locally");
-////            //Read file
-////            FileInputStream file = new FileInputStream(new File(filepath));
-////            XSSFWorkbook workbook = new XSSFWorkbook(file);
-////            XSSFSheet sheet = workbook.getSheetAt(0);
-////            int noOfColumns = sheet.getRow(0).getPhysicalNumberOfCells();
-////            if(noOfColumns != 3) {
-////                return ResponseEntity
-////                        .status(HttpStatus.FORBIDDEN)
-////                        .body("Wrong format!");
-////            }
-////
-////            Iterator<Row> rowIterator = sheet.iterator();
-////            rowIterator.next();
-////            while(rowIterator.hasNext()) {
-////                Row nextRow = rowIterator.next();
-////                Iterator<Cell> cellIterator = nextRow.cellIterator();
-////                String username = "", password = "", email = "";
-////                username = nextRow.getCell(0).getStringCellValue();
-////                System.out.printf("%s%n", nextRow.getCell(0).getStringCellValue());
-////                switch (nextRow.getCell(1).getCellType()) {
-////                    case Cell.CELL_TYPE_STRING:
-////                        System.out.printf("%s%n", nextRow.getCell(1).getStringCellValue());
-////                        password = nextRow.getCell(1).getStringCellValue();
-////                        break;
-////                    case Cell.CELL_TYPE_NUMERIC:
-////                        System.out.printf("%d%n", nextRow.getCell(1).getNumericCellValue());
-////                        password = String.valueOf(nextRow.getCell(1).getNumericCellValue());
-////                        break;
-////                }
-////                email = nextRow.getCell(2).getStringCellValue();
-////                System.out.printf("%s%n", nextRow.getCell(2).getStringCellValue());
-////                //System.out.printf("%s%n", );
-////                User user = new User(username, MD5Hash.encriptInMD5(password), email);
-////                userDao.save(user);
-////            }
-////        }
-////        catch (Exception e) {
-////            System.out.println(e.getMessage());
-////            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-////        }
-////
-////        return new ResponseEntity<>(HttpStatus.OK);
-////    } // method uploadFile
+//    @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+//    @ResponseBody
+//    public ResponseEntity<?> uploadFile(
+//            @RequestParam("uploadfile") MultipartFile uploadfile) {
+//
+//        try {
+//            // Get the filename and build the local file path
+//            String filename = uploadfile.getOriginalFilename();
+//            String directory = env.getProperty("user.dir");
+//            String filepath = Paths.get(directory, filename).toString();
+//
+//            System.out.printf("file name is: %s%n", filepath);
+//
+//            // Save the file locally
+//            BufferedOutputStream bos =
+//                    new BufferedOutputStream(new FileOutputStream(new File(filepath)));
+//            bos.write(uploadfile.getBytes());
+//            bos.close();
+//            log.error("file is saved locally");
+//            //Read file
+//            FileInputStream file = new FileInputStream(new File(filepath));
+//            XSSFWorkbook workbook = new XSSFWorkbook(file);
+//            XSSFSheet sheet = workbook.getSheetAt(0);
+//            int noOfColumns = sheet.getRow(0).getPhysicalNumberOfCells();
+//            if(noOfColumns != 3) {
+//                return ResponseEntity
+//                        .status(HttpStatus.FORBIDDEN)
+//                        .body("Wrong format!");
+//            }
+//
+//            Iterator<Row> rowIterator = sheet.iterator();
+//            rowIterator.next();
+//            while(rowIterator.hasNext()) {
+//                Row nextRow = rowIterator.next();
+//                Iterator<Cell> cellIterator = nextRow.cellIterator();
+//                String username = "", password = "", email = "";
+//                username = nextRow.getCell(0).getStringCellValue();
+//                System.out.printf("%s%n", nextRow.getCell(0).getStringCellValue());
+//                switch (nextRow.getCell(1).getCellType()) {
+//                    case Cell.CELL_TYPE_STRING:
+//                        System.out.printf("%s%n", nextRow.getCell(1).getStringCellValue());
+//                        password = nextRow.getCell(1).getStringCellValue();
+//                        break;
+//                    case Cell.CELL_TYPE_NUMERIC:
+//                        System.out.printf("%d%n", nextRow.getCell(1).getNumericCellValue());
+//                        password = String.valueOf(nextRow.getCell(1).getNumericCellValue());
+//                        break;
+//                }
+//                email = nextRow.getCell(2).getStringCellValue();
+//                System.out.printf("%s%n", nextRow.getCell(2).getStringCellValue());
+//                //System.out.printf("%s%n", );
+//
+//                UsersEntity user = userDao.
+////                        new UsersEntity(username, MD5Hash.encriptInMD5(password), email);
+//                userDao.save(user);
+//            }
+//        }
+//        catch (Exception e) {
+//            System.out.println(e.getMessage());
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//        }
+//
+//        return new ResponseEntity<>(HttpStatus.OK);
+//    } // method uploadFile
 //
 //
 //}

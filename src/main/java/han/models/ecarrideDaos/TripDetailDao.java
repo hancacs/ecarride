@@ -12,6 +12,7 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -25,6 +26,7 @@ import java.util.List;
  * @author han
  */
 @Transactional
+@Repository
 public interface TripDetailDao extends CrudRepository<TaxiTripDetailEntity, Integer> {
 
     /**
