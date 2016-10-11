@@ -8,20 +8,21 @@ import java.util.List;
  * Created by hanmei on 10/11/16.
  */
 @Entity
-@Table(name="department")
-public class Department implements Serializable {
+@Table(name="project")
+public class Project implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
-    @OneToMany(mappedBy="department")
+    private Long id;
+    @OneToMany(mappedBy="projects")
     private List<Employee> employees;
+    //Other properties,constructors, getters and setters and so on
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -32,5 +33,4 @@ public class Department implements Serializable {
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
-    //Other properties,constructors, getters and setters and so on
 }

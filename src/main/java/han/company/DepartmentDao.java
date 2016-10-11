@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface DepartmentDao extends CrudRepository<Department, Integer> {
 
-    public Employee findByDepId(int depId);
+    public Employee findById(int id);
 
 
     public List<Department> findAll();

@@ -6,75 +6,51 @@ import javax.persistence.*;
  * Created by hanmei on 10/11/16.
  */
 @Entity
+@Table(name="empoyee")
 public class Employee {
-
     @Id
-    @GeneratedValue( strategy= GenerationType.AUTO )
-    @Column(name = "eid", nullable = false)
-    private int eid;
-
-    @Column(name = "ename")
-    private String ename;
-
-    @Column(name = "salary")
-    private double salary;
-
-//    @Column(name = "depId", insertable = false, updatable = false)
-//    private int depId;
-
-    @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "depId", referencedColumnName = "depId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Integer id;
+    @ManyToOne
+    @JoinColumn(name="department_id", referencedColumnName="id")
     private Department department;
+    @ManyToOne
+    @JoinColumn(name="project_id", referencedColumnName="id")
+    private Project projects;
+    @OneToOne(mappedBy="employee")
+    private ParkingLot parkingLot;
 
-//    public int getDepId() {
-//        return depId;
-//    }
-//
-//    public void setDepId(int depId) {
-//        this.depId = depId;
-//    }
-
-    public Employee(int eid, String ename, double salary, Department department) {
-        super( );
-        this.eid = eid;
-        this.ename = ename;
-        this.salary = salary;
-        this.department = department;
+    public Integer getId() {
+        return id;
     }
 
-    public Employee( ) {
-        super();
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public int getEid( ) {
-        return eid;
-    }
-
-    public void setEid(int eid) {
-        this.eid = eid;
-    }
-
-    public String getEname( ) {
-        return ename;
-    }
-
-    public void setEname(String ename) {
-        this.ename = ename;
-    }
-
-    public double getSalary( ) {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public Department getDepartment( ) {
-        return this.department;
+    public Department getDepartment() {
+        return department;
     }
 
     public void setDepartment(Department department) {
         this.department = department;
     }
+
+    public Project getProjects() {
+        return projects;
+    }
+
+    public void setProjects(Project projects) {
+        this.projects = projects;
+    }
+
+    public ParkingLot getParkingLot() {
+        return parkingLot;
+    }
+
+    public void setParkingLot(ParkingLot parkingLot) {
+        this.parkingLot = parkingLot;
+    }
+    //Other properties,constructors, getters and setters and so on
 }

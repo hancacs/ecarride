@@ -11,6 +11,9 @@
         <class>han.models.ecarrideModels.TaxiAdminPermissionEntity</class>
         <class>han.company.Department</class>
         <class>han.company.Employee</class>
+        <class>han.company.ParkingLot</class>
+        <class>han.company.Project</class>
+
         <properties>
             <property name="hibernate.connection.url"
                       value="jdbc:mysql://localhost:3306/ecarride_db"/>
