@@ -13,7 +13,7 @@ public class ParkingLot implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name="employee_id",referencedColumnName="id")
     private Employee employee;
 //Other properties,constructors, getters and setters and so on

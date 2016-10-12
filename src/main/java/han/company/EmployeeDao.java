@@ -15,6 +15,7 @@ public interface EmployeeDao extends CrudRepository<Employee, Integer> {
 
     public Employee findById(int id);
 
+    public void deleteById(int id);
 
     public List<Employee> findAll();
 

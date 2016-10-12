@@ -15,10 +15,10 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name="department_id", referencedColumnName="id")
     private Department department;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="project_id", referencedColumnName="id")
     private Project projects;
-    @OneToOne(mappedBy="employee")
+    @OneToOne(mappedBy="employee", fetch = FetchType.EAGER)
     private ParkingLot parkingLot;
 
     public Integer getId() {

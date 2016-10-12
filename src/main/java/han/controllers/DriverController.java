@@ -46,11 +46,9 @@ public class DriverController {
         return driverDao.findByEmail(email) != null;
     }
 
-
     // ------------------------
     // PRIVATE FIELDS
     // ------------------------
-
     @Autowired
     private DriverDao driverDao;
 

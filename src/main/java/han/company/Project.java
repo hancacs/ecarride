@@ -14,7 +14,7 @@ public class Project implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @OneToMany(mappedBy="projects")
+    @OneToMany(mappedBy="projects", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Employee> employees;
     //Other properties,constructors, getters and setters and so on
 

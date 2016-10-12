@@ -14,7 +14,7 @@ public class Department implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-    @OneToMany(mappedBy="department")
+    @OneToMany(mappedBy="department", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Employee> employees;
 
     public int getId() {
