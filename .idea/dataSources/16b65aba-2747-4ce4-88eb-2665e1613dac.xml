@@ -1,0 +1,4525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - ecarride_db_foreign_key@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="ecarride_db_foreign_key">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="ecarride_db"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="test"/>
+    <table id="7" parent="1" name="insurance_company_info"/>
+    <table id="8" parent="1" name="insurance_info"/>
+    <table id="9" parent="1" name="migrations"/>
+    <table id="10" parent="1" name="taxi_admin"/>
+    <table id="11" parent="1" name="taxi_admin_permission"/>
+    <table id="12" parent="1" name="taxi_adminmenu"/>
+    <table id="13" parent="1" name="taxi_base"/>
+    <table id="14" parent="1" name="taxi_base_type"/>
+    <table id="15" parent="1" name="taxi_black_list"/>
+    <table id="16" parent="1" name="taxi_booking"/>
+    <table id="17" parent="1" name="taxi_city"/>
+    <table id="18" parent="1" name="taxi_company"/>
+    <table id="19" parent="1" name="taxi_content"/>
+    <table id="20" parent="1" name="taxi_country_list"/>
+    <table id="21" parent="1" name="taxi_driver"/>
+    <table id="22" parent="1" name="taxi_driver_filter"/>
+    <table id="23" parent="1" name="taxi_driver_rating"/>
+    <table id="24" parent="1" name="taxi_duty_status"/>
+    <table id="25" parent="1" name="taxi_employee"/>
+    <table id="26" parent="1" name="taxi_employee_tracking"/>
+    <table id="27" parent="1" name="taxi_fare_cal_type"/>
+    <table id="28" parent="1" name="taxi_favorite_list"/>
+    <table id="29" parent="1" name="taxi_feedback"/>
+    <table id="30" parent="1" name="taxi_insurance_ratebook"/>
+    <table id="31" parent="1" name="taxi_language"/>
+    <table id="32" parent="1" name="taxi_language_list"/>
+    <table id="33" parent="1" name="taxi_location_update"/>
+    <table id="34" parent="1" name="taxi_notification"/>
+    <table id="35" parent="1" name="taxi_notification_unread"/>
+    <table id="36" parent="1" name="taxi_options"/>
+    <table id="37" parent="1" name="taxi_payment"/>
+    <table id="38" parent="1" name="taxi_pickup"/>
+    <table id="39" parent="1" name="taxi_pre_schedule_group"/>
+    <table id="40" parent="1" name="taxi_pre_schedule_history"/>
+    <table id="41" parent="1" name="taxi_promo"/>
+    <table id="42" parent="1" name="taxi_promo_detail"/>
+    <table id="43" parent="1" name="taxi_ratebook"/>
+    <table id="44" parent="1" name="taxi_refund"/>
+    <table id="45" parent="1" name="taxi_sms"/>
+    <table id="46" parent="1" name="taxi_toll"/>
+    <table id="47" parent="1" name="taxi_toll_detail"/>
+    <table id="48" parent="1" name="taxi_transaction"/>
+    <table id="49" parent="1" name="taxi_trip"/>
+    <table id="50" parent="1" name="taxi_trip_detail"/>
+    <table id="51" parent="1" name="taxi_trip_history"/>
+    <table id="52" parent="1" name="taxi_trip_pool"/>
+    <table id="53" parent="1" name="taxi_trip_status"/>
+    <table id="54" parent="1" name="taxi_trip_toll"/>
+    <table id="55" parent="1" name="taxi_user_card"/>
+    <table id="56" parent="1" name="taxi_user_driver"/>
+    <table id="57" parent="1" name="taxi_userfavorite_driver"/>
+    <table id="58" parent="1" name="taxi_userfavorite_place"/>
+    <table id="59" parent="1" name="taxi_users"/>
+    <table id="60" parent="1" name="taxi_vehicle"/>
+    <table id="61" parent="1" name="taxi_vehicle_brand"/>
+    <table id="62" parent="1" name="taxi_vehicle_type"/>
+    <table id="63" parent="1" name="taxi_vehicle_type_bak"/>
+    <table id="64" parent="1" name="taxi_zipcode"/>
+    <table id="65" parent="1" name="taxi_zipcode_zone"/>
+    <table id="66" parent="1" name="taxi_zone_price_matrix"/>
+    <table id="67" parent="1" name="test_a"/>
+    <table id="68" parent="1" name="test_b"/>
+    <table id="69" parent="1" name="users"/>
+    <column id="70" parent="7" name="insurance_company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="71" parent="7" name="insurance_company_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="72" parent="7" name="PRIMARY">
+      <columns>insurance_company_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="73" parent="8" name="info_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="74" parent="8" name="firstname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="75" parent="8" name="lastname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="76" parent="8" name="insurance_company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="77" parent="8" name="starting_address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="78" parent="8" name="starting_borough">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="79" parent="8" name="ending_address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="80" parent="8" name="ending_borough">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="81" parent="8" name="status">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="82" parent="8" name="price">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+      <default-expression>&apos;0.00&apos;</default-expression>
+    </column>
+    <index id="83" parent="8" name="insurance_company_id_check">
+      <columns>insurance_company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="84" parent="8" name="name">
+      <columns>firstname
+lastname</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="85" parent="8" name="route">
+      <columns>firstname
+lastname
+starting_address
+starting_borough
+ending_address
+ending_borough</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="86" parent="8" name="PRIMARY">
+      <columns>info_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="87" parent="8" name="route">
+      <columns>firstname
+lastname
+starting_address
+starting_borough
+ending_address
+ending_borough</columns>
+      <underlying-index>route</underlying-index>
+    </key>
+    <column id="88" parent="9" name="migration">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="89" parent="9" name="batch">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="90" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="91" parent="10" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="92" parent="10" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="93" parent="10" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="94" parent="10" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="95" parent="10" name="menu_list">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="96" parent="10" name="permission">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="97" parent="10" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="98" parent="10" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="99" parent="10" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="100" parent="10" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="101" parent="10" name="secondary_phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="102" parent="10" name="profile_photo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="103" parent="10" name="last_login">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="104" parent="10" name="ip">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="105" parent="10" name="remember_token">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="106" parent="10" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="107" parent="10" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="108" parent="10" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="109" parent="10" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="110" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="111" parent="11" name="level">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="112" parent="11" name="level_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="113" parent="11" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="114" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="115" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="116" parent="12" name="parent_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="117" parent="12" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="118" parent="12" name="url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="119" parent="12" name="angular_url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="120" parent="12" name="page">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="121" parent="12" name="class">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="122" parent="12" name="img_url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="123" parent="12" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="124" parent="12" name="display_order">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="125" parent="12" name="status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="126" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="127" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="128" parent="13" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="129" parent="13" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="130" parent="13" name="base_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="131" parent="13" name="fare_cal_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="132" parent="13" name="dispatching_license_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="133" parent="13" name="main_contact">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="134" parent="13" name="address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="135" parent="13" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="136" parent="13" name="state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="137" parent="13" name="zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="138" parent="13" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="139" parent="13" name="fax">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="140" parent="13" name="tlc_license">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="141" parent="13" name="tlc_license_num">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="142" parent="13" name="tlc_license_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="143" parent="13" name="tlc_license_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="144" parent="13" name="tlc_license_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="145" parent="13" name="automobile_liability">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="146" parent="13" name="automobile_liability_amount">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="147" parent="13" name="automobile_liability_operr_certificate_holder">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="148" parent="13" name="automobile_liability_self_insured">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="149" parent="13" name="automobile_liability_operr_additional_insured">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="150" parent="13" name="automobile_liability_name_insurer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="151" parent="13" name="automobile_liability_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="152" parent="13" name="automobile_liability_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="153" parent="13" name="automobile_liability_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="154" parent="13" name="general_liability">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="155" parent="13" name="general_liability_amount">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="156" parent="13" name="general_liability_operr_certificate_holder">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="157" parent="13" name="general_liability_self_insured">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="158" parent="13" name="general_liability_operr_additional_insured">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="159" parent="13" name="general_liability_name_insurer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="160" parent="13" name="general_liability_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="161" parent="13" name="general_liability_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="162" parent="13" name="general_liability_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="163" parent="13" name="irs_registered_business_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="164" parent="13" name="federal_tax">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="165" parent="13" name="tin_ein_ssn">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="166" parent="13" name="federal_tax_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="167" parent="13" name="federal_tax_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="168" parent="13" name="federal_tax_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="169" parent="13" name="federal_tax_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="170" parent="13" name="workers_compensation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="171" parent="13" name="workers_compensation_amount">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="172" parent="13" name="workers_compensation_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="173" parent="13" name="workers_compensation_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="174" parent="13" name="workers_compensation_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="175" parent="13" name="training_attestation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="176" parent="13" name="training_attestation_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="177" parent="13" name="training_attestation_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="178" parent="13" name="training_attestation_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="179" parent="13" name="schedule_a">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="180" parent="13" name="schedule_a_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="181" parent="13" name="schedule_a_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="182" parent="13" name="schedule_a_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="183" parent="13" name="schedule_b">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="184" parent="13" name="schedule_b_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="185" parent="13" name="schedule_b_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="186" parent="13" name="schedule_b_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="187" parent="13" name="aetna_insurance_amendment">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="188" parent="13" name="aetna_insurance_amendment_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="189" parent="13" name="aetna_insurance_amendment_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="190" parent="13" name="aetna_insurance_amendment_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="191" parent="13" name="wellcare_insurance_amendment">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="192" parent="13" name="wellcare_insurance_amendment_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="193" parent="13" name="wellcare_insurance_amendment_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="194" parent="13" name="wellcare_insurance_amendment_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="195" parent="13" name="insurance_endorsement_amendment">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="196" parent="13" name="insurance_endorsement_amendment_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="197" parent="13" name="insurance_endorsement_amendment_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="198" parent="13" name="insurance_endorsement_amendment_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="199" parent="13" name="nyct_amendment">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="200" parent="13" name="nyct_amendment_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="201" parent="13" name="nyct_amendment_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="202" parent="13" name="nyct_amendment_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="203" parent="13" name="service_agreement">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="204" parent="13" name="service_agreement_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="205" parent="13" name="service_agreement_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="206" parent="13" name="service_agreement_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="207" parent="13" name="visit_date">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="208" parent="13" name="visit_performed_by">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="209" parent="13" name="visit_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="210" parent="13" name="appt_cancelled_by_vendor">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="211" parent="13" name="no_show">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="212" parent="13" name="provider_audit">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="213" parent="13" name="provider_audit_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="214" parent="13" name="provider_audit_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="215" parent="13" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="216" parent="13" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="217" parent="13" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="218" parent="13" name="base_base_type">
+      <columns>base_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="219" parent="13" name="base_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="220" parent="13" name="base_fare_cal_type">
+      <columns>fare_cal_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="221" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="222" parent="13" name="base_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>no_action</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="223" parent="13" name="base_base_type">
+      <columns>base_type_id</columns>
+      <ref-key>~.taxi_base_type.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="224" parent="13" name="base_fare_cal_type">
+      <columns>fare_cal_type_id</columns>
+      <ref-key>~.taxi_fare_cal_type.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="225" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="226" parent="14" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="227" parent="14" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="228" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="229" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="230" parent="15" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="231" parent="15" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="232" parent="15" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="233" parent="15" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="234" parent="15" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="235" parent="15" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="236" parent="15" name="black_list_driver">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="237" parent="15" name="black_list_user">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="238" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="239" parent="15" name="black_list_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="240" parent="15" name="black_list_driver">
+      <columns>driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="241" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="242" parent="16" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="243" parent="16" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="244" parent="16" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="245" parent="16" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="246" parent="16" name="route_option">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="247" parent="16" name="assigned_driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="248" parent="16" name="approved_by_operator">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="249" parent="16" name="secondary_phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="250" parent="16" name="confirmed">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="251" parent="16" name="assigned_vehicle_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="252" parent="16" name="insurance_ratebook_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="253" parent="16" name="insurance_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="254" parent="16" name="insurance_company_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="255" parent="16" name="insurance_cost_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="256" parent="16" name="eta_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="257" parent="16" name="no_of_passenger">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="258" parent="16" name="no_of_baggage">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="259" parent="16" name="airport">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="260" parent="16" name="terminal">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="261" parent="16" name="flight_carrier">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="262" parent="16" name="flight_num">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="263" parent="16" name="comments">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="264" parent="16" name="pickup_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="265" parent="16" name="booking_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="266" parent="16" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="267" parent="16" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="268" parent="16" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="269" parent="16" name="base_id_index">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="270" parent="16" name="booking_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="271" parent="16" name="trip_id_index">
+      <columns>trip_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="272" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="273" parent="16" name="booking_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="274" parent="16" name="booking_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="275" parent="16" name="booking_trip">
+      <columns>trip_id</columns>
+      <ref-key>~.taxi_trip.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="276" parent="17" name="zip_code">
+      <mandatory>1</mandatory>
+      <data-type>int(5) unsigned zerofill|0</data-type>
+    </column>
+    <column id="277" parent="17" name="latitude">
+      <mandatory>1</mandatory>
+      <data-type>float(10,8)|0</data-type>
+    </column>
+    <column id="278" parent="17" name="longitude">
+      <mandatory>1</mandatory>
+      <data-type>float(10,8)|0</data-type>
+    </column>
+    <column id="279" parent="17" name="state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="280" parent="17" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(128)|0</data-type>
+    </column>
+    <column id="281" parent="17" name="county">
+      <mandatory>1</mandatory>
+      <data-type>varchar(128)|0</data-type>
+    </column>
+    <key id="282" parent="17" name="PRIMARY">
+      <columns>zip_code</columns>
+      <primary>1</primary>
+    </key>
+    <column id="283" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(64)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="284" parent="18" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="285" parent="18" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="286" parent="18" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="287" parent="18" name="address_one">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="288" parent="18" name="address_two">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="289" parent="18" name="worktime_start">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+      <default-expression>&apos;00:00:00&apos;</default-expression>
+    </column>
+    <column id="290" parent="18" name="worktime_end">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+      <default-expression>&apos;23:59:59&apos;</default-expression>
+    </column>
+    <column id="291" parent="18" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="292" parent="18" name="state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="293" parent="18" name="zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="294" parent="18" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="295" parent="18" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="296" parent="18" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="297" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="298" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="299" parent="19" name="parent_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="300" parent="19" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="301" parent="19" name="content">
+      <mandatory>1</mandatory>
+      <data-type>longblob|0</data-type>
+    </column>
+    <column id="302" parent="19" name="page_title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="303" parent="19" name="page_keyword">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="304" parent="19" name="page_description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="305" parent="19" name="accessKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="306" parent="19" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="307" parent="19" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="308" parent="19" name="status">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <index id="309" parent="19" name="fld_accessNo">
+      <columns>accessKey</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="310" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="311" parent="19" name="fld_accessNo">
+      <columns>accessKey</columns>
+      <underlying-index>fld_accessNo</underlying-index>
+    </key>
+    <column id="312" parent="20" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="313" parent="20" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="314" parent="20" name="code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="315" parent="20" name="display_order">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="316" parent="20" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="317" parent="20" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="318" parent="20" name="fld_country_code">
+      <columns>code</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="319" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="320" parent="20" name="fld_country_code">
+      <columns>code</columns>
+      <underlying-index>fld_country_code</underlying-index>
+    </key>
+    <column id="321" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="322" parent="21" name="merchant_account_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="323" parent="21" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="324" parent="21" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="325" parent="21" name="group_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="326" parent="21" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="327" parent="21" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="328" parent="21" name="driver_type">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="329" parent="21" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="330" parent="21" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="331" parent="21" name="fleet_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="332" parent="21" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="333" parent="21" name="secondary_phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="334" parent="21" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="335" parent="21" name="dob">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="336" parent="21" name="gender">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="337" parent="21" name="nationality">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="338" parent="21" name="driving_experience">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="339" parent="21" name="verification_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="340" parent="21" name="profile_photo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="341" parent="21" name="signature">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="342" parent="21" name="driver_license">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="343" parent="21" name="driver_license_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="344" parent="21" name="driver_license_class">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="345" parent="21" name="driver_license_state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="346" parent="21" name="driver_license_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="347" parent="21" name="driver_license_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="348" parent="21" name="driver_license_status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="349" parent="21" name="driver_tlc_fhv_license">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="350" parent="21" name="driver_tlc_fhv_license_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="351" parent="21" name="driver_tlc_fhv_license_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="352" parent="21" name="driver_tlc_fhv_license_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="353" parent="21" name="driver_tlc_fhv_license_status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="354" parent="21" name="background_check">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="355" parent="21" name="background_check_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="356" parent="21" name="background_check_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="357" parent="21" name="background_check_status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="358" parent="21" name="driving_record">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="359" parent="21" name="driving_record_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="360" parent="21" name="driving_record_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="361" parent="21" name="driving_record_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="362" parent="21" name="drug_screen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="363" parent="21" name="drug_screen_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="364" parent="21" name="drug_screen_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="365" parent="21" name="drug_screen_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="366" parent="21" name="address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="367" parent="21" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="368" parent="21" name="state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="369" parent="21" name="zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="370" parent="21" name="vehicle_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="371" parent="21" name="allow_pets">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="372" parent="21" name="allow_wheelchair">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="373" parent="21" name="duty_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="374" parent="21" name="app_language">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="375" parent="21" name="device_token">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="376" parent="21" name="device_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="377" parent="21" name="mobile_os">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="378" parent="21" name="object_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="379" parent="21" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="380" parent="21" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="381" parent="21" name="approvable_mail">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="382" parent="21" name="base_approved">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="383" parent="21" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="384" parent="21" name="driver_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="385" parent="21" name="driver_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="386" parent="21" name="driver_vehicle">
+      <columns>vehicle_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="387" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="388" parent="21" name="driver_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="389" parent="21" name="driver_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="390" parent="21" name="driver_vehicle">
+      <columns>vehicle_id</columns>
+      <ref-key>~.taxi_vehicle.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="391" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="392" parent="22" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="393" parent="22" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="394" parent="22" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="395" parent="22" name="lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;0.0&apos;</default-expression>
+    </column>
+    <column id="396" parent="22" name="lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;0.0&apos;</default-expression>
+    </column>
+    <column id="397" parent="22" name="direction">
+      <mandatory>1</mandatory>
+      <data-type>float(10,6)|0</data-type>
+    </column>
+    <column id="398" parent="22" name="gender">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="399" parent="22" name="language">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="400" parent="22" name="reserved_start">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="401" parent="22" name="reserved_end">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="402" parent="22" name="reserved_zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="403" parent="22" name="driving_experience">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="404" parent="22" name="nationality">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="405" parent="22" name="worktime_start">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="406" parent="22" name="worktime_end">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="407" parent="22" name="vehicle_brand">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="408" parent="22" name="vehicle_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="409" parent="22" name="duty_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="410" parent="22" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="411" parent="22" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="412" parent="22" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="413" parent="22" name="driver_filter_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="414" parent="22" name="driver_filter_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="415" parent="22" name="driver_filter_vehicle_brand">
+      <columns>vehicle_brand</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="416" parent="22" name="driver_filter_vehicle_type">
+      <columns>vehicle_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="417" parent="22" name="taxi_driver_filter_driver_id_index">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="418" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="419" parent="22" name="taxi_driver_filter_driver_id_index">
+      <columns>driver_id</columns>
+      <underlying-index>taxi_driver_filter_driver_id_index</underlying-index>
+    </key>
+    <foreign-key id="420" parent="22" name="driver_filter_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="421" parent="22" name="driver_filter_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="422" parent="22" name="driver_filter_driver">
+      <columns>driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="423" parent="22" name="driver_filter_vehicle_type">
+      <columns>vehicle_type_id</columns>
+      <ref-key>~.taxi_vehicle_type.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="424" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="425" parent="23" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="426" parent="23" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="427" parent="23" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="428" parent="23" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="429" parent="23" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="430" parent="23" name="rating">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="431" parent="23" name="comment">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="432" parent="23" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="433" parent="23" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="434" parent="23" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="435" parent="23" name="driver_rating_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="436" parent="23" name="driver_rating_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="437" parent="23" name="driver_rating_trip">
+      <columns>trip_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="438" parent="23" name="driver_rating_user">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="439" parent="23" name="taxi_driver_rating_driver_id_index">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="440" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="441" parent="23" name="taxi_driver_rating_driver_id_index">
+      <columns>driver_id</columns>
+      <underlying-index>taxi_driver_rating_driver_id_index</underlying-index>
+    </key>
+    <foreign-key id="442" parent="23" name="driver_rating_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="443" parent="23" name="driver_rating_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="444" parent="23" name="driver_rating_driver">
+      <columns>driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="445" parent="23" name="driver_rating_trip">
+      <columns>trip_id</columns>
+      <ref-key>~.taxi_trip.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="446" parent="23" name="driver_rating_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="447" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="448" parent="24" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="449" parent="24" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="450" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="451" parent="25" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="452" parent="25" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="453" parent="25" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="454" parent="25" name="admin_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="455" parent="25" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="456" parent="25" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="457" parent="25" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="458" parent="25" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="459" parent="25" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="460" parent="25" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="461" parent="25" name="duty_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="462" parent="25" name="current_lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="463" parent="25" name="current_lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="464" parent="25" name="device_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="465" parent="25" name="mobile_os">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="466" parent="25" name="object_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="467" parent="25" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="468" parent="25" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="469" parent="25" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="470" parent="25" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="471" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="472" parent="26" name="employee_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="473" parent="26" name="work_date">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="474" parent="26" name="check_history">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="475" parent="26" name="working_hours">
+      <mandatory>1</mandatory>
+      <data-type>double(10,2)|0</data-type>
+    </column>
+    <column id="476" parent="26" name="work_summary">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="477" parent="26" name="route_photo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="478" parent="26" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="479" parent="26" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="480" parent="26" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="481" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="482" parent="27" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="483" parent="27" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="484" parent="27" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="485" parent="27" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="486" parent="28" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="487" parent="28" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="488" parent="28" name="user_confirmed">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="489" parent="28" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="490" parent="28" name="driver_confirmed">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="491" parent="28" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="492" parent="28" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="493" parent="28" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="494" parent="28" name="taxi_favorite_list_driver_index">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="495" parent="28" name="taxi_favorite_list_user_index">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="496" parent="28" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="497" parent="28" name="favorite_list_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="498" parent="28" name="favorite_list_driver">
+      <columns>driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="499" parent="29" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="500" parent="29" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="501" parent="29" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="502" parent="29" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="503" parent="29" name="feedback">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="504" parent="29" name="rating">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="505" parent="29" name="reason">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="506" parent="29" name="family">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="507" parent="29" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="508" parent="29" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="509" parent="29" name="feedback_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="510" parent="29" name="feedback_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="511" parent="29" name="feedback_user">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="512" parent="29" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="513" parent="29" name="feedback_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="514" parent="29" name="feedback_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="515" parent="29" name="feedback_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="516" parent="30" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="517" parent="30" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="518" parent="30" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="519" parent="30" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="520" parent="30" name="basefare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="521" parent="30" name="milefare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="522" parent="30" name="minfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="523" parent="30" name="minimumfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="524" parent="30" name="cancelfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="525" parent="30" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="526" parent="30" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="527" parent="30" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="528" parent="30" name="insurance_ratebook_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="529" parent="30" name="insurance_ratebook_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="530" parent="30" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="531" parent="30" name="insurance_ratebook_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="532" parent="30" name="insurance_ratebook_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="533" parent="31" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="534" parent="31" name="language_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="535" parent="31" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="536" parent="31" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="537" parent="32" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="538" parent="32" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="539" parent="32" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="540" parent="32" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="541" parent="33" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="542" parent="33" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="543" parent="33" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="544" parent="33" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="545" parent="33" name="lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="546" parent="33" name="lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="547" parent="33" name="direction">
+      <mandatory>1</mandatory>
+      <data-type>float(10,6)|0</data-type>
+    </column>
+    <column id="548" parent="33" name="duty_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="549" parent="33" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="550" parent="33" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="551" parent="33" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="552" parent="33" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="553" parent="34" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="554" parent="34" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="555" parent="34" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="556" parent="34" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="557" parent="34" name="notification">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="558" parent="34" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="559" parent="34" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="560" parent="34" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="561" parent="34" name="notification_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="562" parent="34" name="notification_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="563" parent="34" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="564" parent="34" name="notification_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="565" parent="34" name="notification_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="566" parent="35" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="567" parent="35" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="568" parent="35" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="569" parent="35" name="mobile_os">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="570" parent="35" name="notification">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="571" parent="35" name="response">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="572" parent="35" name="message">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="573" parent="35" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="574" parent="35" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="575" parent="35" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="576" parent="35" name="notification_unread_user">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="577" parent="35" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="578" parent="35" name="notification_unread_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="579" parent="36" name="option_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="580" parent="36" name="option_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="581" parent="36" name="option_value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="582" parent="36" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="583" parent="36" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="584" parent="36" name="PRIMARY">
+      <columns>option_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="585" parent="37" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="586" parent="37" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="587" parent="37" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="588" parent="37" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="589" parent="37" name="payment">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="590" parent="37" name="cheque_no">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="591" parent="37" name="pay_time">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="592" parent="37" name="pay_status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="593" parent="37" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="594" parent="37" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="595" parent="37" name="payment_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="596" parent="37" name="payment_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="597" parent="37" name="payment_driver">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="598" parent="37" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="599" parent="37" name="payment_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="600" parent="37" name="payment_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="601" parent="37" name="payment_driver">
+      <columns>driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="602" parent="38" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="603" parent="38" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="604" parent="38" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="605" parent="38" name="pickup_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="606" parent="38" name="destination_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="607" parent="38" name="lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="608" parent="38" name="lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="609" parent="38" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="610" parent="38" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="611" parent="38" name="wheelchair">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="612" parent="38" name="taxi_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="613" parent="38" name="pickup_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="614" parent="38" name="pickup_status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="615" parent="38" name="comments">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="616" parent="38" name="time">
+      <mandatory>1</mandatory>
+      <data-type>int(255)|0</data-type>
+    </column>
+    <column id="617" parent="38" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="618" parent="38" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="619" parent="38" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="620" parent="38" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="621" parent="39" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="622" parent="39" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="623" parent="39" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="624" parent="39" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="625" parent="39" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="626" parent="39" name="pre_schedule_group_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="627" parent="39" name="pre_schedule_group_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="628" parent="39" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="629" parent="39" name="pre_schedule_group_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="630" parent="39" name="pre_schedule_group_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="631" parent="40" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="632" parent="40" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="633" parent="40" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="634" parent="40" name="booking_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="635" parent="40" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="636" parent="40" name="assigned_driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="637" parent="40" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="638" parent="40" name="update_times">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="639" parent="40" name="count_times">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="640" parent="40" name="sent_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="641" parent="40" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="642" parent="40" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <index id="643" parent="40" name="pre_schedule_history_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="644" parent="40" name="pre_schedule_history_booking">
+      <columns>booking_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="645" parent="40" name="pre_schedule_history_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="646" parent="40" name="pre_schedule_history_driver">
+      <columns>assigned_driver_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="647" parent="40" name="pre_schedule_history_trip">
+      <columns>trip_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="648" parent="40" name="pre_schedule_history_user">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="649" parent="40" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="650" parent="40" name="pre_schedule_history_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="651" parent="40" name="pre_schedule_history_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="652" parent="40" name="pre_schedule_history_booking">
+      <columns>booking_id</columns>
+      <ref-key>~.taxi_booking.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="653" parent="40" name="pre_schedule_history_trip">
+      <columns>trip_id</columns>
+      <ref-key>~.taxi_trip.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="654" parent="40" name="pre_schedule_history_driver">
+      <columns>assigned_driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="655" parent="40" name="pre_schedule_history_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="656" parent="41" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="657" parent="41" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="658" parent="41" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="659" parent="41" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="660" parent="41" name="assigned_user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="661" parent="41" name="promo_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="662" parent="41" name="activate_from">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="663" parent="41" name="activate_till">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="664" parent="41" name="dis_percentage">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="665" parent="41" name="dis_amount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="666" parent="41" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="667" parent="41" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="668" parent="41" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="669" parent="41" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="670" parent="42" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="671" parent="42" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="672" parent="42" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="673" parent="42" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="674" parent="42" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="675" parent="42" name="promo_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="676" parent="42" name="used_count">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="677" parent="42" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="678" parent="42" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="679" parent="43" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="680" parent="43" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="681" parent="43" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="682" parent="43" name="ratebook_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="683" parent="43" name="insurance_company">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="684" parent="43" name="vehicle_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="685" parent="43" name="basefare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="686" parent="43" name="milefare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="687" parent="43" name="minfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="688" parent="43" name="minimumfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="689" parent="43" name="cancelfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="690" parent="43" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="691" parent="43" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="692" parent="43" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="693" parent="43" name="ratebook_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="694" parent="43" name="ratebook_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="695" parent="43" name="ratebook_vehicle_type">
+      <columns>vehicle_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="696" parent="43" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="697" parent="43" name="ratebook_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="698" parent="43" name="ratebook_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="699" parent="43" name="ratebook_vehicle_type">
+      <columns>vehicle_type_id</columns>
+      <ref-key>~.taxi_vehicle_type.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="700" parent="44" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="701" parent="44" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="702" parent="44" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="703" parent="44" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="704" parent="44" name="transaction_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="705" parent="44" name="amount">
+      <mandatory>1</mandatory>
+      <data-type>double(10,2)|0</data-type>
+    </column>
+    <column id="706" parent="44" name="comment">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="707" parent="44" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="708" parent="44" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="709" parent="45" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="710" parent="45" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="711" parent="45" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="712" parent="45" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="713" parent="45" name="sms">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="714" parent="45" name="mobile">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="715" parent="45" name="mobile_no">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="716" parent="45" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="717" parent="45" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="718" parent="45" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="719" parent="45" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="720" parent="46" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="721" parent="46" name="toll_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="722" parent="46" name="toll_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="723" parent="46" name="ezpass_offpeak">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="724" parent="46" name="ezpass_peak">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="725" parent="46" name="cash">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="726" parent="46" name="borough">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="727" parent="46" name="zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="728" parent="46" name="lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="729" parent="46" name="lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="730" parent="46" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="731" parent="46" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="732" parent="47" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="733" parent="47" name="toll_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="734" parent="47" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="735" parent="47" name="peak_hour_start">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="736" parent="47" name="peak_hour_end">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="737" parent="47" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="738" parent="47" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="739" parent="48" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="740" parent="48" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="741" parent="48" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="742" parent="48" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="743" parent="48" name="transaction_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="744" parent="48" name="transaction_status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="745" parent="48" name="transaction_amount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="746" parent="48" name="transaction_cardno">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="747" parent="48" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="748" parent="48" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="749" parent="48" name="transaction_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="750" parent="48" name="transaction_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="751" parent="48" name="transaction_trip">
+      <columns>trip_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="752" parent="48" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="753" parent="48" name="transaction_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="754" parent="48" name="transaction_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="755" parent="48" name="transaction_trip">
+      <columns>trip_id</columns>
+      <ref-key>~.taxi_trip.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="756" parent="49" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="757" parent="49" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="758" parent="49" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="759" parent="49" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="760" parent="49" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="761" parent="49" name="vehicle_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="762" parent="49" name="group_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="763" parent="49" name="trip_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="764" parent="49" name="notify_driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="765" parent="49" name="script_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="766" parent="49" name="pickup_lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="767" parent="49" name="pickup_lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="768" parent="49" name="pickup_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="769" parent="49" name="destination_lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="770" parent="49" name="destination_lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="771" parent="49" name="destination_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="772" parent="49" name="pet">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="773" parent="49" name="wheelchair">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="774" parent="49" name="walking_aid">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="775" parent="49" name="estimate_time">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="776" parent="49" name="estimate_low_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="777" parent="49" name="estimate_high_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="778" parent="49" name="estimate_high_fare_origin">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="779" parent="49" name="negotiated_price">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="780" parent="49" name="acceptance_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="781" parent="49" name="base_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="782" parent="49" name="distance_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="783" parent="49" name="minute_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="784" parent="49" name="trip_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="785" parent="49" name="trip_fare_origin">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="786" parent="49" name="gas_surcharge">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="787" parent="49" name="toll_fee">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="788" parent="49" name="black_car_fund">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="789" parent="49" name="tax">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="790" parent="49" name="tip">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="791" parent="49" name="signup_discount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="792" parent="49" name="coupon_discount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="793" parent="49" name="coupon_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="794" parent="49" name="adjustment">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="795" parent="49" name="total_amount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="796" parent="49" name="dsp_share">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="797" parent="49" name="base_share">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="798" parent="49" name="driver_share">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="799" parent="49" name="comments">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="800" parent="49" name="comments_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="801" parent="49" name="comments_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="802" parent="49" name="cancel_address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="803" parent="49" name="favorite">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="804" parent="49" name="trip_status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="805" parent="49" name="pay_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="806" parent="49" name="arrival_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="807" parent="49" name="real_pickup_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="808" parent="49" name="start_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="809" parent="49" name="real_start_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="810" parent="49" name="end_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="811" parent="49" name="distance">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="812" parent="49" name="end_destination">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="813" parent="49" name="timezone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="814" parent="49" name="user_signature">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="815" parent="49" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="816" parent="49" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="817" parent="49" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="818" parent="49" name="trip_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="819" parent="49" name="trip_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="820" parent="49" name="trip_user">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="821" parent="49" name="trip_vehicle">
+      <columns>vehicle_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="822" parent="49" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="823" parent="49" name="trip_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="824" parent="49" name="trip_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="825" parent="49" name="trip_user">
+      <columns>user_id</columns>
+      <ref-key>~.taxi_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="826" parent="49" name="trip_vehicle">
+      <columns>vehicle_id</columns>
+      <ref-key>~.taxi_vehicle.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="827" parent="50" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="828" parent="50" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="829" parent="50" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="830" parent="50" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="831" parent="50" name="trip_type">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="832" parent="50" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="833" parent="50" name="distance">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="834" parent="50" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="835" parent="50" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="836" parent="50" name="trip_detail_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="837" parent="50" name="trip_detail_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="838" parent="50" name="trip_detail_driver">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="839" parent="50" name="trip_detail_trip">
+      <columns>trip_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="840" parent="50" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="841" parent="50" name="trip_detail_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="842" parent="50" name="trip_detail_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="843" parent="50" name="trip_detail_trip">
+      <columns>trip_id</columns>
+      <ref-key>~.taxi_trip.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="844" parent="50" name="trip_detail_driver">
+      <columns>driver_id</columns>
+      <ref-key>~.taxi_driver.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="845" parent="51" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="846" parent="51" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="847" parent="51" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="848" parent="51" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="849" parent="51" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="850" parent="51" name="trip_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="851" parent="51" name="notify_driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="852" parent="51" name="script_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="853" parent="51" name="pickup_lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="854" parent="51" name="pickup_lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="855" parent="51" name="pickup_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="856" parent="51" name="destination_lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="857" parent="51" name="destination_lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="858" parent="51" name="destination_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="859" parent="51" name="pet">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="860" parent="51" name="wheelchair">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="861" parent="51" name="walking_aid">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="862" parent="51" name="estimate_time">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="863" parent="51" name="estimate_low_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="864" parent="51" name="estimate_high_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="865" parent="51" name="estimate_high_fare_origin">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="866" parent="51" name="negotiated_price">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="867" parent="51" name="acceptance_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="868" parent="51" name="base_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="869" parent="51" name="distance_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="870" parent="51" name="minute_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="871" parent="51" name="trip_fare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="872" parent="51" name="trip_fare_origin">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="873" parent="51" name="gas_surcharge">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="874" parent="51" name="toll_fee">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="875" parent="51" name="black_car_fund">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="876" parent="51" name="tax">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="877" parent="51" name="tip">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="878" parent="51" name="signup_discount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="879" parent="51" name="coupon_discount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="880" parent="51" name="coupon_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="881" parent="51" name="adjustment">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="882" parent="51" name="total_amount">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="883" parent="51" name="dsp_share">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="884" parent="51" name="base_share">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="885" parent="51" name="driver_share">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="886" parent="51" name="comments">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="887" parent="51" name="comments_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="888" parent="51" name="comments_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="889" parent="51" name="cancel_address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="890" parent="51" name="favorite">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="891" parent="51" name="trip_status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="892" parent="51" name="pay_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="893" parent="51" name="arrival_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="894" parent="51" name="real_pickup_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="895" parent="51" name="start_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="896" parent="51" name="real_start_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="897" parent="51" name="end_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="898" parent="51" name="distance">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="899" parent="51" name="end_destination">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="900" parent="51" name="user_signature">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="901" parent="51" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+    </column>
+    <column id="902" parent="51" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>&apos;0000-00-00 00:00:00&apos;</default-expression>
+    </column>
+    <column id="903" parent="51" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="904" parent="51" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="905" parent="52" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="906" parent="52" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="907" parent="52" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="908" parent="52" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="909" parent="52" name="booking_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="910" parent="52" name="pickup_lat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="911" parent="52" name="pickup_lng">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="912" parent="52" name="pickup_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="913" parent="52" name="pickup_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="914" parent="52" name="sent_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="915" parent="52" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="916" parent="52" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="917" parent="52" name="trip_pool_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="918" parent="52" name="trip_pool_booking">
+      <columns>booking_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="919" parent="52" name="trip_pool_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="920" parent="52" name="trip_pool_trip">
+      <columns>trip_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="921" parent="52" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="922" parent="52" name="trip_pool_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="923" parent="52" name="trip_pool_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="924" parent="52" name="trip_pool_trip">
+      <columns>trip_id</columns>
+      <ref-key>~.taxi_trip.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="925" parent="52" name="trip_pool_booking">
+      <columns>booking_id</columns>
+      <ref-key>~.taxi_booking.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="926" parent="53" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="927" parent="53" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="928" parent="53" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="929" parent="53" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="930" parent="54" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="931" parent="54" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="932" parent="54" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="933" parent="54" name="toll_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="934" parent="54" name="toll_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="935" parent="54" name="toll_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="936" parent="54" name="toll_price">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="937" parent="54" name="trip_id">
+      <mandatory>1</mandatory>
+      <data-type>int(64)|0</data-type>
+    </column>
+    <column id="938" parent="54" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="939" parent="54" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="940" parent="54" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="941" parent="54" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="942" parent="55" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="943" parent="55" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="944" parent="55" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="945" parent="55" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="946" parent="55" name="card_no">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="947" parent="55" name="card_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="948" parent="55" name="card_cvv">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="949" parent="55" name="card_valid_mon">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="950" parent="55" name="card_valid_year">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="951" parent="55" name="mydefault">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="952" parent="55" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="953" parent="55" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="954" parent="55" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="955" parent="55" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="956" parent="56" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="957" parent="56" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="958" parent="56" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="959" parent="56" name="priority">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="960" parent="56" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="961" parent="57" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="962" parent="57" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="963" parent="57" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="964" parent="57" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="965" parent="57" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="966" parent="57" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="967" parent="57" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="968" parent="57" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="969" parent="57" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="970" parent="58" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="971" parent="58" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="972" parent="58" name="favorite_location">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="973" parent="58" name="latitude">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="974" parent="58" name="longitude">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="975" parent="58" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="976" parent="58" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="977" parent="58" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="978" parent="58" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="979" parent="59" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="980" parent="59" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="981" parent="59" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="982" parent="59" name="customer_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="983" parent="59" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="984" parent="59" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="985" parent="59" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="986" parent="59" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="987" parent="59" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="988" parent="59" name="app_language">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="989" parent="59" name="device_token">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="990" parent="59" name="device_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="991" parent="59" name="mobile_os">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="992" parent="59" name="object_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="993" parent="59" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="994" parent="59" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="995" parent="59" name="secondary_phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="996" parent="59" name="verification_code">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="997" parent="59" name="preferred_driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="998" parent="59" name="address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="999" parent="59" name="profile_photo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1000" parent="59" name="user_ip">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1001" parent="59" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1002" parent="59" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1003" parent="59" name="last_login">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1004" parent="59" name="approvable_mail">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1005" parent="59" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="1006" parent="59" name="user_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1007" parent="59" name="user_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1008" parent="59" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1009" parent="59" name="user_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="1010" parent="59" name="user_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1011" parent="60" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1012" parent="60" name="driver_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1013" parent="60" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1014" parent="60" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1015" parent="60" name="vin">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1016" parent="60" name="year">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1017" parent="60" name="brand">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1018" parent="60" name="model">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1019" parent="60" name="vehicle_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1020" parent="60" name="vehicle_license_state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1021" parent="60" name="profile_photo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1022" parent="60" name="vehicle_plate_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1023" parent="60" name="vehicle_registration">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1024" parent="60" name="vehicle_registration_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1025" parent="60" name="vehicle_registration_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1026" parent="60" name="vehicle_registration_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1027" parent="60" name="liability_insurance">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1028" parent="60" name="liability_amount">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1029" parent="60" name="liability_ecarride_certificate_holder">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1030" parent="60" name="liability_ecarride_additional_insured">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1031" parent="60" name="liability_self_insured">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1032" parent="60" name="liability_name_insurer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1033" parent="60" name="liability_insurance_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1034" parent="60" name="liability_insurance_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1035" parent="60" name="liability_insurance_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1036" parent="60" name="extra_insurance">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1037" parent="60" name="extra_insurance_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1038" parent="60" name="extra_insurance_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1039" parent="60" name="extra_insurance_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1040" parent="60" name="vehicle_tlc_fhv_license">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1041" parent="60" name="vehicle_tlc_fhv_license_num">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1042" parent="60" name="vehicle_tlc_fhv_license_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1043" parent="60" name="vehicle_tlc_fhv_license_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1044" parent="60" name="vehicle_tlc_fhv_license_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1045" parent="60" name="vehicle_inspection">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1046" parent="60" name="vehicle_inspection_start">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1047" parent="60" name="vehicle_inspection_expire">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="1048" parent="60" name="vehicle_inspection_status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <column id="1049" parent="60" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1050" parent="60" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1051" parent="60" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="1052" parent="60" name="vehicle_base">
+      <columns>base_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1053" parent="60" name="vehicle_company">
+      <columns>company_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1054" parent="60" name="vehicle_driver">
+      <columns>driver_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1055" parent="60" name="vehicle_vehicle_type">
+      <columns>vehicle_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1056" parent="60" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1057" parent="60" name="vehicle_base">
+      <columns>base_id</columns>
+      <ref-key>~.taxi_base.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="1058" parent="60" name="vehicle_company">
+      <columns>company_id</columns>
+      <ref-key>~.taxi_company.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="1059" parent="60" name="vehicle_vehicle_type">
+      <columns>vehicle_type_id</columns>
+      <ref-key>~.taxi_vehicle_type.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>no_action</cascade-delete-rule>
+    </foreign-key>
+    <column id="1060" parent="61" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1061" parent="61" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1062" parent="61" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1063" parent="61" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="1064" parent="61" name="brand_name">
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1065" parent="61" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1066" parent="62" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1067" parent="62" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1068" parent="62" name="capacity">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1069" parent="62" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="1070" parent="62" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1071" parent="63" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1072" parent="63" name="vehicle_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1073" parent="63" name="base_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1074" parent="63" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <key id="1075" parent="63" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1076" parent="64" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1077" parent="64" name="admin_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;4&apos;</default-expression>
+    </column>
+    <column id="1078" parent="64" name="zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1079" parent="64" name="vehicle_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1080" parent="64" name="vehicle_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1081" parent="64" name="basefare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="1082" parent="64" name="milefare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="1083" parent="64" name="minfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="1084" parent="64" name="minimumfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="1085" parent="64" name="cancelfare">
+      <mandatory>1</mandatory>
+      <data-type>float(10,2)|0</data-type>
+    </column>
+    <column id="1086" parent="64" name="created_at">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="1087" parent="64" name="updated_at">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1088" parent="64" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+    </column>
+    <index id="1089" parent="64" name="zipcode_cartype">
+      <columns>vehicle_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1090" parent="64" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1091" parent="65" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1092" parent="65" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(111)|0</data-type>
+    </column>
+    <column id="1093" parent="65" name="zipcode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="1094" parent="65" name="zone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="1095" parent="65" name="PRIMARY">
+      <columns>zipcode</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1096" parent="66" name="base_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1097" parent="66" name="company_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1098" parent="66" name="zone_init">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="1099" parent="66" name="zone_end">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="1100" parent="66" name="price">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1101" parent="67" name="a_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1102" parent="67" name="a_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1103" parent="67" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1104" parent="67" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="1105" parent="67" name="PRIMARY">
+      <columns>a_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1106" parent="68" name="b_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1107" parent="68" name="a_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1108" parent="68" name="b_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="1109" parent="68" name="a_id">
+      <columns>a_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1110" parent="68" name="PRIMARY">
+      <columns>b_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1111" parent="69" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1112" parent="69" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1113" parent="69" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1114" parent="69" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="1115" parent="69" name="UK_r43af9ap4edm43mmtq01oddj6">
+      <columns>username</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="1116" parent="69" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="1117" parent="69" name="UK_r43af9ap4edm43mmtq01oddj6">
+      <columns>username</columns>
+      <underlying-index>UK_r43af9ap4edm43mmtq01oddj6</underlying-index>
+    </key>
+  </database-model>
+</dataSource>

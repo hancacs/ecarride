@@ -26,6 +26,17 @@
       <version>0.4</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.4.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.5.0</version>
+    </dependency>
 
     <dependency>
       <groupId>com.jolbox</groupId>
@@ -121,7 +132,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <start-class>han.Application</start-class>
+    <start-class>dev.Application</start-class>
     <java.version>1.8</java.version>
   </properties>
 
